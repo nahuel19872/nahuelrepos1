@@ -1,0 +1,220 @@
+
+body{
+    background-color: rgb(48, 61, 59);
+}
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+header{
+	text-align: center;
+}
+
+
+a:focus {
+	outline: 3px solid skyblue;
+	box-shadow: 0 0 6px rgb(212, 212, 219);
+}
+
+.nav {
+	background-color: rgb(18, 194, 62);
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+.nav ul {
+	list-style: none;
+	display: flex;
+}
+
+.nav li {
+	flex-grow: 1;
+}
+
+.nav a {
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+.nav a:hover {
+	background-color: rgb(15, 180, 57);
+}
+
+.desplegable {
+	box-shadow: 0 0 20px rgb(21, 255, 0);
+	position: relative;
+}
+
+.desplegable2 {
+	box-shadow: 0 0 20px rgb(21, 255, 0);
+	position: relative;
+}
+
+.desplegable3 {
+	box-shadow: 0 0 20px rgb(21, 255, 0);
+	position: relative;
+}
+
+.desplegable4 {
+	box-shadow: 0 0 20px rgb(21, 255, 0);
+	position: relative;
+}
+
+ul.submenu {
+	display: none;
+
+	position: absolute;
+	width: 100%;
+	background-color: rgb(100, 172, 194);
+	flex-direction: column;
+}
+
+ul.submenu2 {
+	display: none;
+
+	position: absolute;
+	width: 100%;
+	background-color: rgb(100, 172, 194);
+	flex-direction: column;
+}
+
+ul.submenu3 {
+	display: none;
+
+	position: absolute;
+	width: 100%;
+	background-color: rgb(100, 172, 194);
+	flex-direction: column;
+}
+
+ul.submenu4 {
+	display: none;
+
+	position: absolute;
+	width: 100%;
+	background-color: rgb(100, 172, 194);
+	flex-direction: column;
+}
+
+
+.desplegable:hover .submenu,
+.desplegable:focus-within .submenu {
+	display: flex;
+}
+
+.desplegable2:hover .submenu2,
+.desplegable2:focus-within .submenu2 {
+	display: flex;
+}
+
+.desplegable3:hover .submenu3,
+.desplegable3:focus-within .submenu3 {
+	display: flex;
+}
+
+.desplegable4:hover .submenu4,
+.desplegable4:focus-within .submenu4 {
+	display: flex;
+}
+
+section{
+    background-color:rgb(9, 56, 5)  ;
+	height: 50px ;
+}
+
+span{
+	margin:200px;
+	padding: 20px;
+}
+
+footer{
+	width: 75px;
+	
+}
+
+.desliza{
+	padding: 8px;
+	width: 600px;
+	margin: auto;
+	}
+
+.desliza h5{
+	margin: 50px;
+	padding: 15px;
+}
+
+.desliza .section{
+
+	border-bottom: 1px solid #808080;
+	padding: 10 2em;
+	margin-bottom: .5em;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px #5F9EA0;
+}
+
+.desliza h5 + div {
+display: none;
+
+}
+
+.desliza :target h5 + div{
+	display: block;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none inside;
+}
+ul.slider {
+    position:relative; /*Necesitamos que el ul sea relativo*/
+}
+ul.slider li {
+    opacity: 0; /*Ocultamos todos los <li>*/
+    transition: opacity .5s;
+    position: absolute; /*Posicionamos en absoluto los <li>*/
+    left: 0px;
+    top: 0px;
+    margin:50px;
+    padding:50px;
+    border:2px solid red;
+    background:#fff;
+}
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> al que apunta el enlace*/
+}
+
+nav2 {
+    position:relative;
+    top:250px;
+    left:50px;
+}
+
+article > p{
+	font-family: sans-serif;
+	
+}
+
+ #main > article{
+	 color: blue;
+ }
+
+
+
+
+
+
+
+
+
+
